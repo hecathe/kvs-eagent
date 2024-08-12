@@ -1,7 +1,7 @@
 module.exports = [
     {
         rules: {
-            indent: [2, 'tab'],
+            indent: [4, 'tab'],
         }
     }
 ];

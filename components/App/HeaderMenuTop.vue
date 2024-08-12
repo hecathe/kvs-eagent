@@ -25,14 +25,40 @@ export default {
 .header-menu-top {
 	display: flex;
 	align-items: center;
+	column-gap: 24px;
 
 	&__link {
 		display: flex;
 		font-weight: 500;
-		padding: 12px;
+		padding: 12px 0;
 
 		&:hover {
 			color: $dark-40;
+		}
+	}
+}
+
+@media screen and (max-width: 1359px) {
+	.header-menu-top {
+		column-gap: 16px;
+	}
+}
+
+@media screen and (max-width: 975px) {
+	.header-menu-top {
+		flex-direction: column;
+		align-items: flex-start;
+
+		&__item {
+			width: 100%;
+		}
+
+		&__link {
+			width: 100%;
+			font-weight: 700;
+			color: $dark-80;
+			border-top: 1px solid $grey-15;
+			padding: 20px 0;
 		}
 	}
 }

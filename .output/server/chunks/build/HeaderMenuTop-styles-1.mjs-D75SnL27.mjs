@@ -1,0 +1,4 @@
+const HeaderMenuTop_vue_vue_type_style_index_0_scoped_8bf3a069_lang = ".header-menu-top[data-v-8bf3a069]{align-items:center;-moz-column-gap:24px;column-gap:24px;display:flex}.header-menu-top__link[data-v-8bf3a069]{display:flex;font-weight:500;padding:12px 0}.header-menu-top__link[data-v-8bf3a069]:hover{color:#969ba0}@media screen and (max-width:1359px){.header-menu-top[data-v-8bf3a069]{-moz-column-gap:16px;column-gap:16px}}@media screen and (max-width:975px){.header-menu-top[data-v-8bf3a069]{align-items:flex-start;flex-direction:column}.header-menu-top__item[data-v-8bf3a069]{width:100%}.header-menu-top__link[data-v-8bf3a069]{border-top:1px solid #dcdfe1;color:#292f36;font-weight:700;padding:20px 0;width:100%}}";
+
+export { HeaderMenuTop_vue_vue_type_style_index_0_scoped_8bf3a069_lang as H };
+//# sourceMappingURL=HeaderMenuTop-styles-1.mjs-D75SnL27.mjs.map
