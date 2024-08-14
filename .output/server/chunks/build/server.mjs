@@ -1583,7 +1583,7 @@ const plugins = [
   plugin_WLsn00x1qh
 ];
 const layouts = {
-  default: () => import('./default-CC1Vtpsd.mjs').then((m) => m.default || m)
+  default: () => import('./default-BXR_EgDo.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",

@@ -1,9 +1,8 @@
-import { a as buildAssetsURL } from '../routes/renderer.mjs';
 import { _ as __nuxt_component_0$1 } from './nuxt-link-Dgb6-tnq.mjs';
 import { useSSRContext, mergeProps, withCtx, createVNode, createTextVNode, toDisplayString } from 'vue';
 import { ssrRenderAttrs, ssrRenderComponent, ssrRenderSlot, ssrRenderAttr, ssrRenderClass, ssrInterpolate, ssrRenderList } from 'vue/server-renderer';
 import { _ as _export_sfc } from './server.mjs';
-import 'vue-bundle-renderer/runtime';
+import { p as publicAssetsURL } from '../routes/renderer.mjs';
 import '../runtime.mjs';
 import 'node:http';
 import 'node:https';
@@ -13,14 +12,15 @@ import 'node:fs';
 import 'node:url';
 import '@iconify/utils';
 import 'consola/core';
-import 'devalue';
-import '@unhead/ssr';
 import 'unhead';
 import '@unhead/shared';
 import 'vue-router';
 import '@vueuse/core';
 import 'tailwind-merge';
 import '@iconify/vue';
+import 'vue-bundle-renderer/runtime';
+import 'devalue';
+import '@unhead/ssr';
 
 const _sfc_main$a = {
   props: {
@@ -236,8 +236,8 @@ _sfc_main$4.setup = (props, ctx) => {
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
 const __nuxt_component_5 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$4], ["__scopeId", "data-v-8bf3a069"]]);
-const _imports_0 = "data:image/svg+xml,%3csvg%20width='104'%20height='93'%20viewBox='0%200%20104%2093'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20%3e%3cg%20clip-path='url(%23clip0_4002_3646)'%3e%3cpath%20d='M0%200L103.363%2046.1291L0%2092.5239V0Z'%20fill='%23191B1E'%20/%3e%3cpath%20d='M33.1537%2072.9053L23.6434%2077.1568L15.9654%2056.1654V80.6111L4.7832%2085.6264V6.78125L15.9654%2011.7911V33.8454L22.4698%2014.7029L32.888%2019.3473L39.0493%2058.5291L44.4189%2024.49L68.3831%2035.2016V40.1505L54.5382%2033.9671L53.9625%2037.6262L68.3831%2044.0864V57.0954L49.5505%2065.5816L51.2666%2054.6984L60.6663%2050.4414L49.5505%2045.4648L46.135%2067.0818L33.4527%2072.767L25.7525%2032.9154L21.9827%2043.71L33.1537%2072.9053Z'%20fill='white'%20/%3e%3cpath%20d='M72.374%2036.9897L92.8396%2046.1181L72.374%2055.2797V36.9897Z'%20fill='%23F4691B'%20/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_4002_3646'%3e%3crect%20width='103.518'%20height='93'%20fill='white'%20/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e";
-const _imports_1 = "" + buildAssetsURL("eagent.Cc24yuK4.svg");
+const _imports_0 = publicAssetsURL("/icons/logo.svg");
+const _imports_1 = publicAssetsURL("/icons/eagent.svg");
 const _sfc_main$3 = {
   data() {
     return {
@@ -308,14 +308,14 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   const _component_Slogan = __nuxt_component_3;
   const _component_AppHeaderMenuMain = __nuxt_component_4;
   const _component_AppHeaderMenuTop = __nuxt_component_5;
-  _push(`<header${ssrRenderAttrs(mergeProps({ class: "header" }, _attrs))} data-v-266410ce>`);
+  _push(`<header${ssrRenderAttrs(mergeProps({ class: "header" }, _attrs))} data-v-39f51ba0>`);
   _push(ssrRenderComponent(_component_nuxt_link, {
     class: "header__logo",
     to: "/"
   }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(`<img${ssrRenderAttr("src", _imports_0)} alt="" data-v-266410ce${_scopeId}>`);
+        _push2(`<img${ssrRenderAttr("src", _imports_0)} alt="" data-v-39f51ba0${_scopeId}>`);
       } else {
         return [
           createVNode("img", {
@@ -327,26 +327,26 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     }),
     _: 1
   }, _parent));
-  _push(`<div class="header__mobile-wrap" data-v-266410ce>`);
+  _push(`<div class="header__mobile-wrap" data-v-39f51ba0>`);
   _push(ssrRenderComponent(_component_AppHeaderUser, { user: $data.user }, null, _parent));
-  _push(`<button class="${ssrRenderClass([{ open: $data.opened }, "header__burger"])}" data-v-266410ce><span data-v-266410ce></span></button></div>`);
+  _push(`<button class="${ssrRenderClass([{ open: $data.opened }, "header__burger"])}" data-v-39f51ba0><span data-v-39f51ba0></span></button></div>`);
   if ($data.opened) {
-    _push(`<div class="header__mobile-menu" data-v-266410ce>`);
+    _push(`<div class="header__mobile-menu" data-v-39f51ba0>`);
     _push(ssrRenderComponent(_component_AppHeaderUserActions, null, null, _parent));
     _push(ssrRenderComponent(_component_Slogan, null, null, _parent));
-    _push(`<div class="header__mobile-lists" data-v-266410ce>`);
+    _push(`<div class="header__mobile-lists" data-v-39f51ba0>`);
     _push(ssrRenderComponent(_component_AppHeaderMenuMain, { list: $data.menu_bottom }, null, _parent));
     _push(ssrRenderComponent(_component_AppHeaderMenuTop, { list: $data.menu_top }, null, _parent));
     _push(`</div></div>`);
   } else {
     _push(`<!---->`);
   }
-  _push(`<div class="header__top" data-v-266410ce><div class="header__wrapper" data-v-266410ce>`);
+  _push(`<div class="header__top" data-v-39f51ba0><div class="header__wrapper" data-v-39f51ba0>`);
   _push(ssrRenderComponent(_component_AppHeaderMenuTop, { list: $data.menu_top }, null, _parent));
   _push(ssrRenderComponent(_component_Slogan, null, null, _parent));
-  _push(`</div></div><div class="header__bottom" data-v-266410ce><div class="header__wrapper" data-v-266410ce>`);
+  _push(`</div></div><div class="header__bottom" data-v-39f51ba0><div class="header__wrapper" data-v-39f51ba0>`);
   _push(ssrRenderComponent(_component_AppHeaderMenuMain, { list: $data.menu_bottom }, null, _parent));
-  _push(`<div class="header__user-wrap" data-v-266410ce><img class="header__eagent"${ssrRenderAttr("src", _imports_1)} alt="" data-v-266410ce>`);
+  _push(`<div class="header__user-wrap" data-v-39f51ba0><img class="header__eagent"${ssrRenderAttr("src", _imports_1)} alt="" data-v-39f51ba0>`);
   _push(ssrRenderComponent(_component_AppHeaderUser, { user: $data.user }, null, _parent));
   _push(ssrRenderComponent(_component_AppHeaderUserActions, null, null, _parent));
   _push(`</div></div></div></header>`);
@@ -357,7 +357,7 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/app/Header.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$3], ["__scopeId", "data-v-266410ce"]]);
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$3], ["__scopeId", "data-v-39f51ba0"]]);
 const _sfc_main$2 = {
   props: {
     socials: {
@@ -453,4 +453,4 @@ _sfc_main.setup = (props, ctx) => {
 const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 
 export { _default as default };
-//# sourceMappingURL=default-CC1Vtpsd.mjs.map
+//# sourceMappingURL=default-BXR_EgDo.mjs.map

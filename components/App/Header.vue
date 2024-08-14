@@ -5,7 +5,7 @@
 			to="/"
 		>
 			<img
-				src="/assets/svg/logo.svg"
+				src="/icons/logo.svg"
 				alt=""
 			>
 		</nuxt-link>
@@ -44,7 +44,7 @@
 				<div class="header__user-wrap">
 					<img
 						class="header__eagent"
-						src="/assets/svg/eagent.svg"
+						src="/icons/eagent.svg"
 						alt=""
 					>
 
