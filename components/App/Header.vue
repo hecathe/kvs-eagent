@@ -83,11 +83,11 @@ export default {
 					link: '#',
 				},
 				{
-					icon: '/icons/school.svg',
+					icon: 'icons/school.svg',
 					link: '#',
 				},
 				{
-					icon: '/icons/telegram-black.svg',
+					icon: 'icons/telegram-black.svg',
 					link: '#',
 				}
 			],
