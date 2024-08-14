@@ -1,10 +1,10 @@
 const client_manifest = {
-  "_Di2lggvP.js": {
+  "_CP6pQgeU.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Di2lggvP.js",
+    "file": "CP6pQgeU.js",
     "name": "nuxt-link",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -15,12 +15,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DRmEM2MR.js",
+    "file": "hIfvhlJ6.js",
     "name": "default",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_Di2lggvP.js",
+      "_CP6pQgeU.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
@@ -38,7 +38,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "B7hI08qN.js",
+    "file": "Biip6Q1P.js",
     "name": "index",
     "src": "node_modules/@nuxt/icon/dist/runtime/components/index.js",
     "isDynamicEntry": true,
@@ -51,12 +51,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BUhl7ax0.js",
+    "file": "DiYvhBOP.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_Di2lggvP.js",
+      "_CP6pQgeU.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": []
@@ -72,7 +72,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BbC0fJ8r.js",
+    "file": "txs30zxS.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
@@ -92,7 +92,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CgesdDEV.js",
+    "file": "CYRmE8RZ.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -109,14 +109,14 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CMBiM5Mi.js",
+    "file": "DIIB_Zj7.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/@nuxt/icon/dist/runtime/components/index.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_Di2lggvP.js"
+      "_CP6pQgeU.js"
     ]
   }
 };

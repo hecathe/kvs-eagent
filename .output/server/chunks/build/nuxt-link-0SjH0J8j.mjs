@@ -263,4 +263,4 @@ function applyTrailingSlashBehavior(to, trailingSlash) {
 }
 
 export { __nuxt_component_0 as _ };
-//# sourceMappingURL=nuxt-link-Dgb6-tnq.mjs.map
+//# sourceMappingURL=nuxt-link-0SjH0J8j.mjs.map
