@@ -9,14 +9,6 @@ export default defineNuxtConfig({
 			viewport: "width=device-width, initial-scale=1",
 		},
 	},
-	nitro: {
-		runtimeConfig: {
-			app: {
-				baseURL: "/kvseagent/",
-				buildAssetsDir: "_nuxt",
-			},
-		},
-	},
 
 	devtools: { enabled: true },
 
