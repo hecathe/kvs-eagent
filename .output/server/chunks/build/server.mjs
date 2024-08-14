@@ -711,7 +711,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-DeSSVU22.mjs').then((m) => m.default || m)
+    component: () => import('./index-DXWkelIv.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {

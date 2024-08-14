@@ -1,3 +1,5 @@
 <template>
-	<UButton>Button</UButton>
+	<main class="main">
+		<UButton>Button</UButton>
+	</main>
 </template>

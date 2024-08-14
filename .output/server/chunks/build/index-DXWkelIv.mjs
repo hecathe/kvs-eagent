@@ -1,8 +1,8 @@
 import { _ as __nuxt_component_0$2 } from './nuxt-link-0SjH0J8j.mjs';
 import { z as isEqual } from '../runtime.mjs';
-import { defineComponent, useSSRContext, toRef, computed, useAttrs, toValue, getCurrentInstance, provide, inject, withCtx, createTextVNode, createVNode, resolveDynamicComponent, mergeProps, renderSlot, openBlock, createBlock, createCommentVNode, toDisplayString } from 'vue';
+import { defineComponent, useSSRContext, toRef, computed, useAttrs, toValue, getCurrentInstance, provide, inject, mergeProps, withCtx, createTextVNode, createVNode, resolveDynamicComponent, renderSlot, openBlock, createBlock, createCommentVNode, toDisplayString } from 'vue';
 import { m as mergeConfig, b as appConfig, _ as _export_sfc, a as useAppConfig, g as get, o as omit } from './server.mjs';
-import { ssrRenderComponent, ssrRenderVNode, ssrRenderSlot, ssrRenderAttrs, ssrRenderClass, ssrInterpolate } from 'vue/server-renderer';
+import { ssrRenderAttrs, ssrRenderComponent, ssrRenderVNode, ssrRenderSlot, ssrRenderClass, ssrInterpolate } from 'vue/server-renderer';
 import __nuxt_component_0$3 from './index-BdNFFeJr.mjs';
 import { twMerge, twJoin } from 'tailwind-merge';
 import 'node:http';
@@ -756,7 +756,8 @@ const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender
 const _sfc_main = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_UButton = __nuxt_component_0;
-  _push(ssrRenderComponent(_component_UButton, _attrs, {
+  _push(`<main${ssrRenderAttrs(mergeProps({ class: "main" }, _attrs))}>`);
+  _push(ssrRenderComponent(_component_UButton, null, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(`Button`);
@@ -768,6 +769,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
     }),
     _: 1
   }, _parent));
+  _push(`</main>`);
 }
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
@@ -778,4 +780,4 @@ _sfc_main.setup = (props, ctx) => {
 const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 
 export { index as default };
-//# sourceMappingURL=index-DeSSVU22.mjs.map
+//# sourceMappingURL=index-DXWkelIv.mjs.map
