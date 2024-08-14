@@ -19,11 +19,11 @@ export default {
 			social: [
 				{
 					link: '#',
-					icon: 'icons/telegram-white.svg',
+					icon: '/kvs-eagent/icons/telegram-white.svg',
 				},
 				{
 					link: '#',
-					icon: 'icons/youtube.svg',
+					icon: '/kvs-eagent/icons/youtube.svg',
 				},
 			]
 		}

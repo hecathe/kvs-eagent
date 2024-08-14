@@ -80,14 +80,14 @@ export default {
 				},
 				{
 					title: 'Контакты',
+					link: '/contacts/',
+				},
+				{
+					icon: '/kvs-eagent/icons/school.svg',
 					link: '#',
 				},
 				{
-					icon: 'icons/school.svg',
-					link: '#',
-				},
-				{
-					icon: 'icons/telegram-black.svg',
+					icon: '/kvs-eagent/icons/telegram-black.svg',
 					link: '#',
 				}
 			],
@@ -118,10 +118,10 @@ export default {
 				title: 'STAFF KVS'
 			},
 			kvs_logo: { 
-				url: 'icons/logo.svg' 
+				url: '/kvs-eagent/icons/logo.svg' 
 			},
 			eagent_logo: { 
-				url: 'icons/eagent.svg' 
+				url: '/kvs-eagent/icons/eagent.svg' 
 			},
 		}
 	},
