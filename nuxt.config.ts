@@ -2,8 +2,8 @@
 export default defineNuxtConfig({
 	compatibilityDate: "2024-04-03",
 	app: {
-		baseURL: "/kvseagent/",
-		buildAssetsDir:'/kvseagent/_nuxt/',
+		baseURL: "/kvs-eagent/",
+		buildAssetsDir:'/kvs-eagent/_nuxt/',
 		head: {
 			charset: "utf-8",
 			viewport: "width=device-width, initial-scale=1",
