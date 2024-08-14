@@ -2,7 +2,6 @@ import { _ as __nuxt_component_0$1 } from './nuxt-link-Dgb6-tnq.mjs';
 import { useSSRContext, mergeProps, withCtx, createVNode, createTextVNode, toDisplayString } from 'vue';
 import { ssrRenderAttrs, ssrRenderComponent, ssrRenderSlot, ssrRenderAttr, ssrRenderClass, ssrInterpolate, ssrRenderList } from 'vue/server-renderer';
 import { _ as _export_sfc } from './server.mjs';
-import { p as publicAssetsURL } from '../routes/renderer.mjs';
 import '../runtime.mjs';
 import 'node:http';
 import 'node:https';
@@ -12,15 +11,16 @@ import 'node:fs';
 import 'node:url';
 import '@iconify/utils';
 import 'consola/core';
+import '../routes/renderer.mjs';
+import 'vue-bundle-renderer/runtime';
+import 'devalue';
+import '@unhead/ssr';
 import 'unhead';
 import '@unhead/shared';
 import 'vue-router';
 import '@vueuse/core';
 import 'tailwind-merge';
 import '@iconify/vue';
-import 'vue-bundle-renderer/runtime';
-import 'devalue';
-import '@unhead/ssr';
 
 const _sfc_main$a = {
   props: {
@@ -236,8 +236,6 @@ _sfc_main$4.setup = (props, ctx) => {
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
 const __nuxt_component_5 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$4], ["__scopeId", "data-v-8bf3a069"]]);
-const _imports_0 = publicAssetsURL("/icons/logo.svg");
-const _imports_1 = publicAssetsURL("/icons/eagent.svg");
 const _sfc_main$3 = {
   data() {
     return {
@@ -297,7 +295,15 @@ const _sfc_main$3 = {
       user: {
         name: "\u041A\u043E\u043D\u0442\u0435\u043D\u0442\u043E\u0432 \u041A\u043E\u043D\u0442\u0435\u043D\u0442",
         title: "STAFF KVS"
-      }
+      },
+      logos: [
+        {
+          kvs: "icons/logo.svg"
+        },
+        {
+          eagent: "icons/eagent.svg"
+        }
+      ]
     };
   }
 };
@@ -308,45 +314,45 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   const _component_Slogan = __nuxt_component_3;
   const _component_AppHeaderMenuMain = __nuxt_component_4;
   const _component_AppHeaderMenuTop = __nuxt_component_5;
-  _push(`<header${ssrRenderAttrs(mergeProps({ class: "header" }, _attrs))} data-v-39f51ba0>`);
+  _push(`<header${ssrRenderAttrs(mergeProps({ class: "header" }, _attrs))} data-v-3a545045>`);
   _push(ssrRenderComponent(_component_nuxt_link, {
     class: "header__logo",
     to: "/"
   }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(`<img${ssrRenderAttr("src", _imports_0)} alt="" data-v-39f51ba0${_scopeId}>`);
+        _push2(`<img${ssrRenderAttr("src", $data.logos.kvs)} alt="" data-v-3a545045${_scopeId}>`);
       } else {
         return [
           createVNode("img", {
-            src: _imports_0,
+            src: $data.logos.kvs,
             alt: ""
-          })
+          }, null, 8, ["src"])
         ];
       }
     }),
     _: 1
   }, _parent));
-  _push(`<div class="header__mobile-wrap" data-v-39f51ba0>`);
+  _push(`<div class="header__mobile-wrap" data-v-3a545045>`);
   _push(ssrRenderComponent(_component_AppHeaderUser, { user: $data.user }, null, _parent));
-  _push(`<button class="${ssrRenderClass([{ open: $data.opened }, "header__burger"])}" data-v-39f51ba0><span data-v-39f51ba0></span></button></div>`);
+  _push(`<button class="${ssrRenderClass([{ open: $data.opened }, "header__burger"])}" data-v-3a545045><span data-v-3a545045></span></button></div>`);
   if ($data.opened) {
-    _push(`<div class="header__mobile-menu" data-v-39f51ba0>`);
+    _push(`<div class="header__mobile-menu" data-v-3a545045>`);
     _push(ssrRenderComponent(_component_AppHeaderUserActions, null, null, _parent));
     _push(ssrRenderComponent(_component_Slogan, null, null, _parent));
-    _push(`<div class="header__mobile-lists" data-v-39f51ba0>`);
+    _push(`<div class="header__mobile-lists" data-v-3a545045>`);
     _push(ssrRenderComponent(_component_AppHeaderMenuMain, { list: $data.menu_bottom }, null, _parent));
     _push(ssrRenderComponent(_component_AppHeaderMenuTop, { list: $data.menu_top }, null, _parent));
     _push(`</div></div>`);
   } else {
     _push(`<!---->`);
   }
-  _push(`<div class="header__top" data-v-39f51ba0><div class="header__wrapper" data-v-39f51ba0>`);
+  _push(`<div class="header__top" data-v-3a545045><div class="header__wrapper" data-v-3a545045>`);
   _push(ssrRenderComponent(_component_AppHeaderMenuTop, { list: $data.menu_top }, null, _parent));
   _push(ssrRenderComponent(_component_Slogan, null, null, _parent));
-  _push(`</div></div><div class="header__bottom" data-v-39f51ba0><div class="header__wrapper" data-v-39f51ba0>`);
+  _push(`</div></div><div class="header__bottom" data-v-3a545045><div class="header__wrapper" data-v-3a545045>`);
   _push(ssrRenderComponent(_component_AppHeaderMenuMain, { list: $data.menu_bottom }, null, _parent));
-  _push(`<div class="header__user-wrap" data-v-39f51ba0><img class="header__eagent"${ssrRenderAttr("src", _imports_1)} alt="" data-v-39f51ba0>`);
+  _push(`<div class="header__user-wrap" data-v-3a545045><img class="header__eagent"${ssrRenderAttr("src", $data.logos.eagent)} alt="" data-v-3a545045>`);
   _push(ssrRenderComponent(_component_AppHeaderUser, { user: $data.user }, null, _parent));
   _push(ssrRenderComponent(_component_AppHeaderUserActions, null, null, _parent));
   _push(`</div></div></div></header>`);
@@ -357,7 +363,7 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/app/Header.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$3], ["__scopeId", "data-v-39f51ba0"]]);
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$3], ["__scopeId", "data-v-3a545045"]]);
 const _sfc_main$2 = {
   props: {
     socials: {
@@ -453,4 +459,4 @@ _sfc_main.setup = (props, ctx) => {
 const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 
 export { _default as default };
-//# sourceMappingURL=default-BXR_EgDo.mjs.map
+//# sourceMappingURL=default-YRI0KpG9.mjs.map

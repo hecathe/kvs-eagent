@@ -5,7 +5,7 @@
 			to="/"
 		>
 			<img
-				src="/icons/logo.svg"
+				:src="logos.kvs"
 				alt=""
 			>
 		</nuxt-link>
@@ -44,7 +44,7 @@
 				<div class="header__user-wrap">
 					<img
 						class="header__eagent"
-						src="/icons/eagent.svg"
+						:src="logos.eagent"
 						alt=""
 					>
 
@@ -116,7 +116,15 @@ export default {
 			user: {
 				name: 'Контентов Контент',
 				title: 'STAFF KVS'
-			}
+			},
+			logos: [
+				{
+					kvs: 'icons/logo.svg',
+				},
+				{
+					eagent: 'icons/eagent.svg',
+				}
+			]
 		}
 	},
 }
