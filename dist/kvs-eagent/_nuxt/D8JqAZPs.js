@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as o,f as s}from"./D89q1AvZ.js";const c={props:{wide:{type:Boolean,default:!1}}},d={class:"section"},_={key:1,class:"container"};function r(e,i,n,f,l,p){return t(),o("section",d,[n.wide?s(e.$slots,"default",{key:0},void 0,!0):(t(),o("div",_,[s(e.$slots,"default",{},void 0,!0)]))])}const m=a(c,[["render",r],["__scopeId","data-v-c0fea245"]]);export{m as _};

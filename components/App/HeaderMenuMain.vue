@@ -19,17 +19,19 @@ export default {
 
 <style lang="scss" scoped>
 .header-menu-main {
+	height: 100%;
 	display: flex;
 	column-gap: 28px;
 
 	&__link {
+		height: 100%;
 		position: relative;
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		font-weight: 700;
 		font-size: 18px;
 		color: white;
-		padding-top: 25px;
-		padding-bottom: 26px;
 		box-sizing: border-box;
 
 		&:hover {

@@ -14,20 +14,12 @@
 
 <script>
 export default {
-	data() {
-		return {
-			social: [
-				{
-					link: '#',
-					icon: '/kvs-eagent/icons/telegram-white.svg',
-				},
-				{
-					link: '#',
-					icon: '/kvs-eagent/icons/youtube.svg',
-				},
-			]
+	props: {
+		social: {
+			type: Array,
+			default: () => [],
 		}
-	},
+	}
 }
 </script>
 

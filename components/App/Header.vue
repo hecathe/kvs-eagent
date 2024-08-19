@@ -5,13 +5,13 @@
 			to="/"
 		>
 			<img
-				:src="kvs_logo.url"
+				:src="template.kvs_logo"
 				alt=""
 			>
 		</nuxt-link>
 
 		<div class="header__mobile-wrap">
-			<AppHeaderUser :user="user"></AppHeaderUser>
+			<AppHeaderUser :user="template.user"></AppHeaderUser>
 			<button
 				@click="opened = !opened"
 				class="header__burger"
@@ -26,29 +26,29 @@
 			<Slogan></Slogan>
 
 			<div class="header__mobile-lists">
-				<AppHeaderMenuMain :list="menu_bottom"></AppHeaderMenuMain>
-				<AppHeaderMenuTop :list="menu_top"></AppHeaderMenuTop>
+				<AppHeaderMenuMain :list="template.menu_bottom"></AppHeaderMenuMain>
+				<AppHeaderMenuTop :list="template.menu_top"></AppHeaderMenuTop>
 			</div>
 		</div>
 
 		<div class="header__top">
 			<div class="header__wrapper">
-				<AppHeaderMenuTop :list="menu_top"></AppHeaderMenuTop>
+				<AppHeaderMenuTop :list="template.menu_top"></AppHeaderMenuTop>
 				<Slogan></Slogan>
 			</div>
 		</div>
 		<div class="header__bottom">
 			<div class="header__wrapper">
-				<AppHeaderMenuMain :list="menu_bottom"></AppHeaderMenuMain>
+				<AppHeaderMenuMain :list="template.menu_bottom"></AppHeaderMenuMain>
 
 				<div class="header__user-wrap">
 					<img
 						class="header__eagent"
-						:src="eagent_logo.url"
+						:src="template.eagent_logo"
 						alt=""
 					>
 
-					<AppHeaderUser :user="user"></AppHeaderUser>
+					<AppHeaderUser :user="template.user"></AppHeaderUser>
 					<AppHeaderUserActions></AppHeaderUserActions>
 				</div>
 			</div>
@@ -58,71 +58,10 @@
 
 <script>
 export default {
-	data() {
-		return {
-			opened: false,
-			menu_top: [
-				{
-					title: 'База знаний',
-					link: '#',
-				},
-				{
-					title: 'Акции',
-					link: '#',
-				},
-				{
-					title: 'Новости',
-					link: '#',
-				},
-				{
-					title: 'Избранное',
-					link: '#',
-				},
-				{
-					title: 'Контакты',
-					link: '/contacts/',
-				},
-				{
-					icon: '/kvs-eagent/icons/school.svg',
-					link: '#',
-				},
-				{
-					icon: '/kvs-eagent/icons/telegram-black.svg',
-					link: '#',
-				}
-			],
-			menu_bottom: [
-				{
-					title: 'Объекты в продаже',
-					link: '#',
-				},
-				{
-					title: 'Шахматка',
-					link: '#',
-				},
-				{
-					title: 'Мои клиенты',
-					link: '#',
-				},
-				{
-					title: 'Записаться на показ',
-					link: '#',
-				},
-				{
-					title: 'Мои сделки',
-					link: '#',
-				},
-			],
-			user: {
-				name: 'Контентов Контент',
-				title: 'STAFF KVS'
-			},
-			kvs_logo: { 
-				url: '/kvs-eagent/icons/logo.svg' 
-			},
-			eagent_logo: { 
-				url: '/kvs-eagent/icons/eagent.svg' 
-			},
+	props: {
+		template: {
+			type: Object,
+			default: () => {},
 		}
 	},
 }
@@ -161,6 +100,7 @@ export default {
 	}
 
 	&__wrapper {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -174,6 +114,7 @@ export default {
 	}
 
 	&__bottom {
+		display: flex;
 		color: $white;
 		background-color: $dark-80;
 	}

@@ -704,9 +704,14 @@ async function getRouteRules(url) {
 }
 const _routes = [
   {
+    name: "clients",
+    path: "/clients",
+    component: () => import('./clients-khcagcKS.mjs').then((m) => m.default || m)
+  },
+  {
     name: "contacts",
     path: "/contacts",
-    component: () => import('./contacts-B7zMXMk3.mjs').then((m) => m.default || m)
+    component: () => import('./contacts--9LZdY57.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -1588,7 +1593,7 @@ const plugins = [
   plugin_WLsn00x1qh
 ];
 const layouts = {
-  default: () => import('./default-Cx0pWZsO.mjs').then((m) => m.default || m)
+  default: () => import('./default-DhVq3-P5.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
