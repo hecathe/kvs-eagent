@@ -3,9 +3,16 @@
 		<TheSection>
 			<h1 class="title-h1">Клиенты</h1>
 
-			<form>
-				<AppInput id="fio" label="Фамилия *"></AppInput>
-			</form>
+			<AppForm :border="true" :grid_3="true">
+				<AppInput id="lastname" label="Фамилия"></AppInput>
+				<AppInput id="name" label="Имя"></AppInput>
+				<AppInput id="fname" label="Отчество"></AppInput>
+				<AppInput id="phone" label="Телефон" type="tel"></AppInput>
+				<AppInput id="add-phone" label="Доп. телефон" type="tel"></AppInput>
+				<AppInput id="add-phone-2" label="Доп. телефон 2" type="tel"></AppInput>
+				<AppInput id="date-birth" label="Дата рождения" type="text"></AppInput>
+				<AppSelect class="form__field form__field_span-2" :options="regions" :selected="selected"></AppSelect>
+			</AppForm>
 		</TheSection>
 		<TheSection>
 			<AppTable :table="table"></AppTable>
@@ -74,8 +81,24 @@ export default {
 						agent: 'менеджер м.м',
 					},
 				]
-			}
+			},
+			regions: [
+				'Санкт-Петербург',
+				'Москва',
+				'Екатеринбург',
+			],
+			selected: this.regions,
 		}
 	},
 }
 </script>
+
+<style lang="scss" scoped>
+.form {
+	&__field {
+		&_span-2 {
+			grid-column: span 2;
+		}
+	}
+}
+</style>

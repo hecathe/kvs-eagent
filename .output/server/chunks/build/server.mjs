@@ -706,7 +706,7 @@ const _routes = [
   {
     name: "clients",
     path: "/clients",
-    component: () => import('./clients-khcagcKS.mjs').then((m) => m.default || m)
+    component: () => import('./clients-yOXfOZd5.mjs').then((m) => m.default || m)
   },
   {
     name: "contacts",
@@ -716,7 +716,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-DXWkelIv.mjs').then((m) => m.default || m)
+    component: () => import('./index-CdT2PW4Q.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1033,7 +1033,7 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./index-BdNFFeJr.mjs').then((r) => r["default"] || r.default || r));
+const LazyIcon = defineAsyncComponent(() => import('./index-DKpfHAfk.mjs').then((r) => r["default"] || r.default || r));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon]
 ];
@@ -1149,7 +1149,20 @@ const modals_oqljskDzoR = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
 const cfg0 = defineAppConfig({
   ui: {
     primary: "orange",
-    gray: "cool"
+    gray: "cool",
+    select: {
+      height: "max-h-full",
+      default: {
+        loadingIcon: "i-octicon-sync-24",
+        trailingIcon: "i-octicon-chevron-down-24"
+      }
+    },
+    selectMenu: {
+      height: "max-h-full",
+      default: {
+        selectedIcon: "material-symbols:fitbit-check-small"
+      }
+    }
   }
 });
 const inlineConfig = {
@@ -1971,5 +1984,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { _export_sfc as _, useAppConfig as a, appConfig as b, useNuxtApp as c, useRuntimeConfig as d, entry$1 as default, asyncDataDefaults as e, createError as f, get as g, useRouter as h, navigateTo as i, mergeConfig as m, nuxtLinkDefaults as n, omit as o, resolveRouteObject as r, useHead as u };
+export { _export_sfc as _, appConfig as a, useNuxtApp as b, useAppConfig as c, useRuntimeConfig as d, entry$1 as default, asyncDataDefaults as e, createError as f, get as g, useRouter as h, navigateTo as i, mergeConfig as m, nuxtLinkDefaults as n, omit as o, resolveRouteObject as r, useHead as u };
 //# sourceMappingURL=server.mjs.map

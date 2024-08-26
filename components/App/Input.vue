@@ -43,6 +43,7 @@ export default {
 	}
 
 	&__field {
+		width: 100%;
 		height: 56px;
 		display: flex;
 		background-color: $grey-5;
