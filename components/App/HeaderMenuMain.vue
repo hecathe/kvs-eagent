@@ -66,6 +66,7 @@ export default {
 		}
 
 		&__link {
+			justify-content: flex-start;
 			width: 100%;
 			font-size: 16px;
 			color: $dark-80;

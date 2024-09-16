@@ -64,6 +64,12 @@ export default {
 			default: () => {},
 		}
 	},
+
+	data() {
+		return {
+			opened: false,
+		}
+	},
 }
 </script>
 
@@ -90,6 +96,10 @@ export default {
 		background-color: $white;
 		padding: 30px 16px;
 		z-index: 3;
+	}
+
+	&__mobile-lists {
+		display: grid;
 	}
 
 	&__logo {

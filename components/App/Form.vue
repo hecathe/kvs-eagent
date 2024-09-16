@@ -3,7 +3,7 @@
 		class="form" 
 		:class="{
 				'form_border': border,
-				'form_grid-3': grid_3,
+				'form_grid-3': threeColumns,
 			}"
 		>
 		<slot></slot>
@@ -17,7 +17,7 @@ export default {
 			type: Boolean,
 			default: false,
 		},
-		grid_3: {
+		threeColumns: {
 			type: Boolean,
 			default: false,
 		}

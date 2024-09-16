@@ -3,7 +3,7 @@
 		<TheSection>
 			<h1 class="title-h1">Клиенты</h1>
 
-			<AppForm :border="true" :grid_3="true">
+			<AppForm :border="true" :three-columns="true">
 				<AppInput id="lastname" label="Фамилия"></AppInput>
 				<AppInput id="name" label="Имя"></AppInput>
 				<AppInput id="fname" label="Отчество"></AppInput>
@@ -11,7 +11,7 @@
 				<AppInput id="add-phone" label="Доп. телефон" type="tel"></AppInput>
 				<AppInput id="add-phone-2" label="Доп. телефон 2" type="tel"></AppInput>
 				<AppInput id="date-birth" label="Дата рождения" type="text"></AppInput>
-				<AppSelect class="form__field form__field_span-2" :options="regions" :selected="selected"></AppSelect>
+				<AppSelect class="form__field form__field_span-2" :options="regions" label="Регион"></AppSelect>
 			</AppForm>
 		</TheSection>
 		<TheSection>
